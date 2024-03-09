@@ -1,0 +1,55 @@
+/* Update Dropdown.css */
+
+.dropdown {
+    width: 100%; /* Adjust the width as needed */
+    height: 18vh;
+    border: 1px solid rgb(205, 198, 198);
+    margin-bottom: 15px;
+    padding: 1rem; /* Increase padding for better alignment */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Align content to the start */
+    position: relative; /* Add this to handle the icon's position */
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff; /* Set background color */
+  }
+  
+  .dropdown:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 5px 8px rgba(165, 89, 235, 0.317);
+  }
+  
+  .dropdown div {
+    display: flex;
+    justify-content: flex-start; /* Align icons and title vertically */
+    align-items: center; /* Align icons and title horizontally */
+    width: 100%;
+  }
+  
+  .dropdown div h5 {
+    color: rgb(8, 72, 2);
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .arrow {
+    width: 30px; /* Increase icon width as needed */
+    height: 30px; /* Increase icon height as needed */
+    margin-right: 1rem; /* Add margin for spacing between icon and title */
+    cursor: pointer;
+  }
+  
+  .secure {
+    width: 30px; /* Increase icon width as needed */
+    height: 30px; /* Increase icon height as needed */
+    margin-right: 1rem; /* Add margin for spacing between icon and title */
+    cursor: pointer;
+  }
+  
+  .dropdown p {
+    color: rgb(153, 153, 153);
+    font-size: 15px;
+    margin: 1rem 0; /* Add margin for spacing */
+}

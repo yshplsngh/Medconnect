@@ -1,0 +1,247 @@
+/* Add Google Font - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f4f4f4, #fff);
+  min-height: 100vh;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #057e93 !important;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-header h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+  color: #333;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.calendar-time {
+  display: flex;
+  align-items: flex-start;
+}
+
+.calendar {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.current-date {
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Time slot colors */
+.morning {
+  background-color: #00a65a !important;
+  color: #fff !important;
+  border-color: #00a65a !important;
+  border-radius: 8px;
+}
+
+.afternoon {
+  background-color: #057e93 !important;
+  color: #fff !important;
+  border-color: #057e93 !important;
+  border-radius: 8px;
+}
+
+.lateafternoon {
+  background-color: #ccc !important;
+  color: #fff !important;
+  cursor: not-allowed;
+  border-radius: 8px;
+}
+
+.evening {
+  background-color: #00a65a !important;
+  color: #fff !important;
+  border-color: #00a65a !important;
+  border-radius: 8px;
+}
+
+.night {
+  background-color: #00a65a !important;
+  color: #fff !important;
+  border-color: #00a65a !important;
+  border-radius: 8px;
+}
+
+/* Animation for time button hover */
+.time-button {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.time-button:hover {
+  background-color: #4d524f !important;
+  color: white !important;
+  border-color: #007bff !important;
+  transform: scale(1.05);
+}
+
+/* Add this to your CSS */
+.time-button.unavailable {
+  background-color: #ccc !important;
+  color: #fff !important;
+  cursor: not-allowed;
+}
+
+.time-button.available {
+  background-color: #00a65a !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.time-button.selected {
+  background-color: #3025b3 !important;
+  color: white !important;
+}
+
+.submit {
+  background-color: #057e93;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.appoint {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+/* Upcoming GIF and message */
+.upcoming-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.upcoming-gif {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.upcoming-message {
+  font-weight: bold;
+  color: #057e93;
+}
+
+/* Patient Message */
+.patient-message {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+/* ... (previous CSS code) */
+
+.upcoming-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.upcoming-gif {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ... (remaining CSS code) */
+.upcoming-gif {
+  max-width: 120px; /* Adjust the size as needed */
+  height: auto;
+}
+.current-date {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  background-color: rgb(15, 209, 212);
+  border-radius: 10%;
+  display: inline-block;
+  padding: 5px 10px; /* Adjust padding for the circle size */
+}
+/* Add this to your CSS */
+.custom-tile.current-date {
+  
+  background-color: white; /* Red circle background for the current date */
+  color: #f37575; /* White text color for the current date */
+  border-radius: 50%; /* Border-radius for a circular shape */
+  display: inline-block;
+  padding: 5px 10px; /* Adjust padding for the circle size */
+}
+.time-button {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  border-radius: 12px; /* Add border-radius for time slots */
+  padding: 10px 20px; /* Adjust padding for time slot buttons */
+  
+}

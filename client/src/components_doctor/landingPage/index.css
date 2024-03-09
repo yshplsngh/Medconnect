@@ -1,0 +1,14 @@
+/* SliderButtonStyles.css */
+
+/* Override the color of the slider navigation buttons */
+.slick-prev,
+.slick-next {
+  background-color: #333; /* Change the background color to your preferred color */
+  color: #fff; /* Change the text color to white or another suitable color */
+}
+
+/* Style the buttons on hover */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #555; /* Change the background color on hover */
+}
